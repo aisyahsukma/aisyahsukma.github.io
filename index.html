@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDN Klagensrampat</title>
+    <link rel="stylesheet" href="webbb.css">
+    <script src="webjs.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <header>
+        <div id="sdn" class="container-fluid">
+            <div class="left col-1">
+                <img id="logo" src="Logo_SD_-_Sekolah_Dasar-removebg-preview.png">
+            </div>
+            <div class="right col-9">
+                <h1>SD NEGERI KLAGENSRAMPAT</h1>
+                <h4>Rt.10 Rw.02 Desa Klagensrampat, Kec. Maduran, Kab. Lamongan Telp.088012123</h4>
+                <h4>email: sdnklagensrampat@gmail.com website:sdnklagensrampat.sch.id</h4>
+            </div>
+        </div>
+        <div id="nav2" class="container-fluid">
+            <nav>
+                <ul>
+                    <div class="w3-left">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Berita">Berita</a></li>
+                        <li><a href="#Konten">Konten</a></li>
+                    </div>
+                    <div class="w3-right">
+                        <li><a href="#FindUs">Find Us</a></li>
+                        <li><a href="#LogIn">Log In</a></li>
+                        <li><a href="#SignIn">Sign In</a></li>
+                        <form class="form-inline" action="/action_page.php">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <div class="content-slide">
+            <div class="imgslide">
+                <div class="numberslide">1 / 3</div>
+                <img src="foto1.jpg" width="100%" height="600px" alt="">
+                <div class="text">Pramuka</div>
+            </div>
+
+            <div class="imgslide">
+                <div class="numberslide">2 / 3</div>
+                <img src="foto2.jpg" width="100%" height="600px" alt="">
+                <div class="text">Nonton Bareng</div>
+            </div>
+
+            <div class="imgslide">
+                <div class="numberslide">3 / 3</div>
+                <img src="foto3.jpg" width="100%" height="600px" alt="">
+                <div class="text">Pramuka</div>
+            </div>
+
+            <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+            <a class="next" onClick="nextslide(1)">&#10095;</a> 
+        </div>
+
+        <div class="page">
+            <span class="dot" onClick="dotslide(1)"></span>
+            <span class="dot" onClick="dotslide(2)"></span>
+            <span class="dot" onClick="dotslide(3)"></span>
+        </div>
+    </div>
+    <main class="container-fluid">
+        <div id="Home" class="container-fluid"><br>
+            <h2>Profil Sekolah</h2><br>
+            <table>
+                <tr>
+                    <td>
+                        <article id="tabel">
+                            <h1>SD Negeri Klagensrampat</h1>
+                            <p>Sekolah Dasar Klagensrampat telah menggunakan kurikulum terbaru
+                                <br> yaitu kurikulum merdeka. SD Klagensrampat juga menerapkan
+                                <br> sistem sekolah adiwiyata.
+                            </p>
+                        </article>
+                    </td>
+                    <td><img class="pp" src="302006951_527428136053226_875284203980648440_n.jpg" width="100%" height="100%"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Berita" class="container-fluid"><br>
+            <h2>Berita Terbaru</h2><br>
+            <div class="w3-container">
+                <div class="w3-card-2">
+                    <img class="card-img-top" src="280748761_521036979476900_7010752435675901659_n.jpg" alt="Card image" >
+                    <div class="card-body">
+                        <h4 class="card-title">Upacara Hari Pendidikan</h4>
+                        <p class="card-text">Upacara Peringatan Hari Pendidikan Nasional diundur menjadi tanggal 13 Mei 2022.</p>
+                        <a href="#" class="btn btn-light">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container">
+                <div class="w3-card-2">
+                    <img class="card-img-top" src="300377535_584165873164010_2731799248210313925_n.jpg" alt="Card image" >
+                    <div class="card-body">
+                        <h4 class="card-title">HUT RI ke-77</h4>
+                        <p class="card-text">Dokumentasi kegiatan Lomba memasukkan karet ke dalam botol tanggal 19 Agustus 2022 HUT RI ke 77</p>
+                        <a href="#" class="btn btn-light">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container">
+                <div class="w3-card-2">
+                    <img class="card-img-top" src="180127932_291664152414185_5271484052308675435_n.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Selamat Hari Pendidikan Nasional</h4>
+                        <p class="card-text">Anak bangsa adalah masa depan negara. Hardiknas 2 Mei 2021</p>
+                        <a href="#" class="btn btn-light">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="Konten" class="container-fluid"><br>
+            <h2>Konten Siswa</h2><br>
+            <div class="w3-container">
+                <div class="w3-card-2">
+                    <img class="card-img-top" src="973982536586572492.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Menyanyi</h4>
+                        <p class="card-text">Tema 5 Sub Tema 3</p>
+                        <a href="https://youtu.be/Fw-6-UCyTOQ" class="btn btn-light">Lihat</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container">
+                <div class="w3-card-2">
+                    <img class="card-img-top" src="5301308035088834590.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Pembelajaran Tematik</h4>
+                        <p class="card-text">Tema 5 Sub Tema 3</p>
+                        <a href="https://youtu.be/xU9nZfNiXb0" class="btn btn-light">Lihat</a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-container">
+                <div class="w3-card-2">
+                    <img class="card-img-top" src="5301308035088834590.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Pembekalan Materi</h4>
+                        <p class="card-text">Materi pengembangan diri di hari santri</p>
+                        <a href="https://youtu.be/pzc4MkXf7WA" class="btn btn-light">Lihat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<footer class="container-fluid">
+    <article>
+        <h3>Kunjungi</h3>
+        <li>Alamat : Dsn. Srampat, Rt.10 Rw.02 Desa Klagensrampat, Kec. Maduran, Kab. Lamongan</li>
+        <li>Email : sdnklagensrampat@gmail.com</li>
+        <li>Telepon : 088012123</li>
+        <li>Website : sdnklagensrampat.sch.id</li>
+    </article>
+</footer>
+</html>

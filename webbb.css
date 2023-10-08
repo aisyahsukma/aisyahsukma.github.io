@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+
+}
+
+header{
+    width: 100%;
+    background: white;
+
+}
+
+main{
+    background: #d9d9d9;
+    display: inline-grid;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+form{
+    padding-top: 20px;
+}
+
+#Home{
+    width: auto;
+    height: auto;
+}
+
+#Berita{
+    display: grid;
+    width: auto;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr;  
+}
+
+#Konten{
+    display: grid;
+    width: auto;
+    overflow: hidden;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-body {
+    background: #d6d6d6;
+}
+
+#Berita .card{
+    width: 400px;
+    height: 500px;
+}
+
+#Konten .card{
+    width: 400px;
+    height: 400px;
+}
+
+
+h2{
+    text-align: center;
+    display: block;
+
+}
+
+
+#sdn {
+    text-align: left;
+    font-size:20px;
+    background: white;
+
+}
+
+tr, td{
+    padding: 20px;
+    align-items: center;
+    width: 60%;
+
+}
+
+
+#tabel{
+    padding-left: 50px;
+}
+
+.right {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 60px;
+}
+
+.left{
+    padding: 10px;
+    margin-left: 100px;
+}
+
+#logo{
+    width:120px; 
+    height:120px;
+}
+.right, .left {
+    float: left;
+}
+
+.nav {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    font-size: 20px;
+
+}
+
+.nav ul{
+    background: #4484ce;
+    list-style: none;
+    position: initial;
+    display: inline-table;
+    width: 100%;
+    padding: 0 20px;
+}
+.nav ul li {
+    float: right;
+}
+
+.nav ul li:hover a{
+    color: black;
+}
+
+.nav ul li a{
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+#pencarian, #search {
+    padding: 10px;
+    margin-top: 13px;
+}
+nav {
+    margin: auto;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+
+}
+nav ul{
+    background: #4484ce;
+    list-style: none;
+    position: initial;
+    display: inline-block;
+    width: 100%;
+    padding: 0 20px;
+}
+nav ul li {
+    float: left;
+}
+
+
+nav ul li:hover a{
+    color: black;
+}
+
+nav ul li a{
+    display: block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+}
+.nav ul li:hover {
+    background:#1e6bc4;
+}
+nav ul li:hover {
+    background:#4484ce;
+}
+
+footer {
+    background-color: #4484ce;
+    color: black;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .left{
+        padding: none;
+    }
+    [class*="col-3"], [class*="col-7"] {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+
+.container {
+    padding: none;
+    margin: none;
+}
+
+.content-slide {
+    max-width: 2000px;
+    position: relative;
+    margin: auto;
+}
+
+.imgslide {
+    display: none;
+}
+
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    color: rgb(255, 254, 224);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.pre:hover,
+.next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+}
+
+.text {
+    color: #fafafa;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.content-slide .numberslide {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+    .content-slide {
+        padding: 8px 50px 12px 50px;
+    }
+
+    .next {
+        right: 50px;
+        border-radius: 3px 0 0 3px;
+    }
+    
+}
+
+.container .page {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.page .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 50%;
+}
+
+.page .active,
+.page .dot:hover {
+    background-color: #ce0000;
+}
+
+
